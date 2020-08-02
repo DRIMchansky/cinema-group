@@ -1,0 +1,5 @@
+export const one = '0px 2px 4px rgba(37, 37, 37, 0.1)'
+export const two = '0px 4px 8px rgba(37, 37, 37, 0.1)'
+export const three = '0px 8px 16px rgba(37, 37, 37, 0.1)'
+export const four = '0px 16px 24px rgba(37, 37, 37, 0.1)'
+export const five = '0px 24px 32px rgba(37, 37, 37, 0.1)'

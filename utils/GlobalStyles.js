@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 import { general } from './fonts'
+import { md, xl } from './media'
 
 const GlobalStyles = createGlobalStyle`
 *,
@@ -10,6 +11,15 @@ const GlobalStyles = createGlobalStyle`
 html {
   line-height: 1.15; 
   -webkit-text-size-adjust: 100%; 
+  font-size: 16px;
+
+  @media(${md}) {
+    font-size: 18px;
+  }
+  
+  @media(${xl}) {
+    font-size: 20px;
+  }
 }
 
 body {
