@@ -9,6 +9,7 @@ const GlobalStyles = createGlobalStyle`
   box-sizing: border-box;
 }
 html {
+  height: 100%;
   line-height: 1.15; 
   -webkit-text-size-adjust: 100%; 
   font-size: 16px;
@@ -23,8 +24,13 @@ html {
 }
 
 body {
+  height: 100%;
   margin: 0;
   font-family: ${general};
+}
+
+div#__next {
+  height: 100%;
 }
 
 hr {

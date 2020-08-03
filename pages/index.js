@@ -6,7 +6,7 @@ import Layout from '../components/Layout'
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Head>
         <title>Рублион Синема</title>
       </Head>
@@ -16,6 +16,6 @@ export default function Home() {
         <Button>Простая кнопка</Button>
         <StyledButton>Стилизованная кнопка</StyledButton>
       </Layout>
-    </div>
+    </>
   )
 }
