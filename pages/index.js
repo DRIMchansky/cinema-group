@@ -9,7 +9,6 @@ export default function Home() {
     <div>
       <Head>
         <title>Рублион Синема</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
         <main>hello, please press the button</main>
