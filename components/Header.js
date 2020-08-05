@@ -1,5 +1,8 @@
+// packages
+import styled from 'styled-components'
+
 const Header = () => {
-  return <header>Header</header>
+  return <div>Header</div>
 }
 
 export default Header

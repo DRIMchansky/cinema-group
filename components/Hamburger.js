@@ -6,7 +6,7 @@ import { FoldIcon, CloseIcon } from './NavIcons'
 const Hamburger = ({ isActive, setActive }) => {
   return (
     <StyledHamburger onClick={() => setActive(!isActive)}>
-      {isActive ? <FoldIcon /> : <CloseIcon />}
+      {isActive ? <CloseIcon /> : <FoldIcon />}
     </StyledHamburger>
   )
 }
@@ -24,8 +24,9 @@ const StyledHamburger = styled.button`
   margin: 0;
   overflow: visible;
   position: absolute;
-  right: 0.6rem;
+  left: 0.6rem;
   top: 0.6rem;
+  z-index: 3;
 `
 
 export default Hamburger
