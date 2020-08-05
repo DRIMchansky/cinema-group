@@ -1,1 +1,1 @@
-export const mobileMenuWidth = 200
+export const mobileMenuWidth = 240

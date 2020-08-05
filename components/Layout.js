@@ -4,6 +4,7 @@ import { useState } from 'react'
 // components
 import MobileHeader from './MobileHeader'
 import Hamburger from './Hamburger'
+import Header from './Header'
 
 const Layout = ({ children }) => {
   // mobile menu state state
@@ -14,6 +15,7 @@ const Layout = ({ children }) => {
       <StyledLayout>
         <StyledContent>
           <MobileHeader isActive={isActive} />
+          <Header />
           <Hamburger isActive={isActive} setActive={setActive} />
           <OverflowStyled isActive={isActive} onClick={() => setActive(!isActive)} />
           {children}

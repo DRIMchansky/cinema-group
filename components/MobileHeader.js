@@ -4,11 +4,12 @@ import styled from 'styled-components'
 import Navbar from './Navbar'
 // utils
 import { mobileMenuWidth } from '../utils/sizes'
+import { white, background } from '../utils/colors'
 
 const MobileHeader = ({ isActive }) => {
   return (
     <StyledMobileHeader isActive={isActive}>
-      <Navbar />
+      <Navbar type="mobile" />
     </StyledMobileHeader>
   )
 }
@@ -16,7 +17,7 @@ const MobileHeader = ({ isActive }) => {
 const StyledMobileHeader = styled.header`
   display: flex;
   position: fixed;
-  background: pink;
+  background: ${white};
   transform: translateX(${(props) => (props.isActive ? '0' : '-100%')});
   transition: 0.2s ease-out;
   transition-property: all;
@@ -27,6 +28,10 @@ const StyledMobileHeader = styled.header`
   height: 100%;
   width: ${mobileMenuWidth}px;
   z-index: 2;
+  padding-top: 4rem;
+  padding-right: 1rem;
+  overflow-y: scroll;
+  background: ${background};
 `
 
 export default MobileHeader

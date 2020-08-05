@@ -1,12 +1,11 @@
 // packages
 import styled from 'styled-components'
 // utils
-import { black } from '../utils/colors'
+import { white } from '../utils/colors'
 
 const Svg = styled.svg`
   svg {
     display: inline-block;
-    fill: ${black};
   }
 `
 
@@ -26,8 +25,14 @@ export const CloseIcon = ({ color }) => (
   </Svg>
 )
 
-export const FoldIcon = () => (
-  <Svg xmlns="http://www.w3.org/2000/svg" width="17" height="14" xmlnsXlink="http://www.w3.org/1999/xlink">
+export const FoldIcon = ({ color }) => (
+  <Svg
+    fill={color}
+    xmlns="http://www.w3.org/2000/svg"
+    width="17"
+    height="14"
+    xmlnsXlink="http://www.w3.org/1999/xlink"
+  >
     <title>fold</title>
     <use xlinkHref="#fold" transform="translate(0 1)" />
     <defs>

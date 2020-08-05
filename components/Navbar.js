@@ -1,9 +1,9 @@
 // packages
 import styled from 'styled-components'
 
-const Navbar = () => {
+const Navbar = ({ type }) => {
   return (
-    <StyledNavbar>
+    <StyledNavbar type={type}>
       <ul class="navbar__list">
         {/*  Сеть кинотеатров  */}
         <li class="navbar__item">
@@ -45,7 +45,18 @@ const Navbar = () => {
 }
 
 const StyledNavbar = styled.nav`
+  display: ${(props) => (props.type === 'mobile' ? 'block' : 'none')};
+  visibility: ${(props) => (props.type === 'mobile' ? 'visible' : 'hidden')};
+
+  @media (min-width: 960px) {
+    display: ${(props) => (props.type === 'mobile' ? 'none' : 'block')};
+    visibility: ${(props) => (props.type === 'mobile' ? 'hidden' : 'visible')};
+  }
+
   & ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
   }
 
   & li {
