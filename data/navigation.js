@@ -2,27 +2,30 @@ export const navigation = [
   {
     primaryTitle: 'Сеть кинотеатров',
     primaryTitleHref: '#',
-    items: [
+    cities: [
       {
         city: 'Сыктывкар',
-        places: [
-          { branch: '«РубЛион Синема»', name: 'ТРК «РубликЪ»' },
-          { branch: '«РубЛион Синема»', name: 'ТРЦ «Парма»' },
+        links: [
+          { branch: '«РубЛион Синема»', name: 'ТРК «РубликЪ»', href: '/' },
+          { branch: '«РубЛион Синема»', name: 'ТРЦ «Парма»', href: '/' },
         ],
       },
-      { city: 'Котлас', places: [{ branch: '«Рублион Синема»', name: 'ТРЦ «Столица»' }] },
+      { city: 'Котлас', links: [{ branch: '«Рублион Синема»', name: 'ТРЦ «Столица»', href: '/' }] },
     ],
   },
   {
     primaryTitle: 'Сеть игровых центров',
     primaryTitleHref: '#',
+    cities: [],
   },
   {
     primaryTitle: 'Сеть боулинг центров',
     primaryTitleHref: '#',
+    cities: [],
   },
   {
     primaryTitle: 'Сеть кафе',
     primaryTitleHref: '#',
+    cities: [],
   },
 ]
