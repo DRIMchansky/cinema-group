@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { useState } from 'react'
 // components
 import MobileHeader from './MobileHeader'
-import Hamburger from './Hamburger'
+
 import Header from './Header'
 
 const Layout = ({ children }) => {
@@ -15,8 +15,7 @@ const Layout = ({ children }) => {
       <StyledLayout>
         <StyledContent>
           <MobileHeader isActive={isActive} />
-          <Header />
-          <Hamburger isActive={isActive} setActive={setActive} />
+          <Header isActive={isActive} setActive={setActive} />
           <OverflowStyled isActive={isActive} onClick={() => setActive(!isActive)} />
           {children}
         </StyledContent>

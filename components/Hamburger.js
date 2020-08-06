@@ -26,9 +26,15 @@ const StyledHamburger = styled.button`
   margin: 0;
   overflow: visible;
   position: absolute;
-  left: 0.6rem;
-  top: 0.6rem;
+  left: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
   z-index: 3;
+
+  @media (min-width: 960px) {
+    display: none;
+    visibility: hidden;
+  }
 `
 
 export default Hamburger
