@@ -19,7 +19,6 @@ const NavbarSubList = ({ cities }) => {
     </StyledNavbarSublist>
   )
 }
-
 const StyledNavbarSublist = styled.ul`
   & li {
   }
