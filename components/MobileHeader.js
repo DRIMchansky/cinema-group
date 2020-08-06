@@ -1,7 +1,7 @@
 // packages
 import styled from 'styled-components'
 // components
-import Navbar from './Navbar'
+import Navbar from './Navbar/Navbar'
 // utils
 import { mobileMenuWidth } from '../utils/sizes'
 import { white, background } from '../utils/colors'
@@ -29,7 +29,6 @@ const StyledMobileHeader = styled.header`
   width: ${mobileMenuWidth}px;
   z-index: 2;
   padding-top: 4rem;
-  padding-right: 1rem;
   overflow-y: scroll;
   background: ${background};
 `

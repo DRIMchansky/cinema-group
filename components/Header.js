@@ -2,7 +2,7 @@
 import styled from 'styled-components'
 // components
 import Logo from './Logo'
-import Navbar from './Navbar'
+import Navbar from './Navbar/Navbar'
 import TicketLink from './TicketLink'
 import Container from '@material-ui/core/Container'
 import Hamburger from './Hamburger'

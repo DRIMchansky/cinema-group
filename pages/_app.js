@@ -23,7 +23,10 @@ class MyApp extends App {
           <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
           <link rel="preload" as="style" href="$CSS&display=swap" />
-          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" />
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap"
+          />
           <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon.png" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
           <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
