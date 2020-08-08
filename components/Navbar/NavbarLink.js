@@ -20,9 +20,6 @@ const StyledNavbarLink = styled.a`
   font-size: 1.3rem;
   padding: 0.7rem 0 0.3rem 0.5rem;
   width: 100%;
-
-  &:hover {
-  }
 `
 
 export default NavbarLink

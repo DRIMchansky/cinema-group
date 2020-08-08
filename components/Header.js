@@ -12,7 +12,7 @@ import { colors, breakpoints } from '../utils/cssConfig'
 const Header = ({ isActive, setActive }) => {
   return (
     <StyledHeader>
-      <StyledContainer maxWidth="lg">
+      <StyledContainer maxWidth="ex">
         <Hamburger isActive={isActive} setActive={setActive} />
         <Logo />
         <Navbar type="desctop" />

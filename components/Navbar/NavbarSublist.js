@@ -3,7 +3,7 @@ import styled from 'styled-components'
 // components
 import NavbarSubLink from './NavbarSubLink'
 // utils
-import { colors } from '../../utils/cssConfig'
+import { colors, breakpoints, shadows } from '../../utils/cssConfig'
 
 const NavbarSubList = ({ cities }) => {
   return (
@@ -27,6 +27,37 @@ const StyledNavbarSublist = styled.ul`
   list-style-type: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: ${breakpoints.medium}) {
+    position: absolute;
+    background: ${colors.background};
+    min-width: 15ch;
+    left: 50%;
+    top: calc(100% - 0.25rem);
+    transition: 280ms all 120ms ease-out;
+    transform: rotateX(-90deg) translateX(-50%);
+    transform-origin: top center;
+    opacity: 0.3;
+    padding: 0.5em 0;
+    border-radius: 4px;
+    box-shadow: 0 0.15em 0.25em rgba(black, 0.25);
+
+    &:before {
+      content: '';
+      border: 0.5rem solid transparent;
+      border-bottom-color: #fff;
+      position: absolute;
+      top: calc(100% - 1.25rem);
+      left: 50%;
+      transform: translateX(-50%);
+      transition: 280ms all 120ms ease-out;
+      opacity: 0;
+    }
+
+    &:hover,
+    &:focus-within {
+    }
+  }
 
   & li {
   }
