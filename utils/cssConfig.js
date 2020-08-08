@@ -4,6 +4,7 @@ const constants = {
 
 const colors = {
   primary: '#eebbc3',
+  lighter: '#324082',
   black: '#333',
   white: '#fff',
   background: '#232946',

@@ -4,10 +4,10 @@ import Link from 'next/link'
 // utils
 import { colors } from '../../utils/cssConfig'
 
-const NavbarLink = ({ name, href, type }) => {
+const NavbarLink = ({ name, href }) => {
   return (
     <Link href={href} passHref>
-      <StyledNavbarLink type={type}>{name}</StyledNavbarLink>
+      <StyledNavbarLink>{name}</StyledNavbarLink>
     </Link>
   )
 }
@@ -17,8 +17,8 @@ const StyledNavbarLink = styled.a`
   color: ${colors.white};
   text-decoration: none;
   font-weight: 500;
-  font-size: ${(props) => (props.type === 'primary' ? '1.2rem' : '1rem')};
-  padding: 0.3rem 0.5rem;
+  font-size: 1.3rem;
+  padding: 0.7rem 0 0.3rem 0.5rem;
   width: 100%;
 
   &:hover {
