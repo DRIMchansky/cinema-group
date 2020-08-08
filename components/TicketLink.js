@@ -10,7 +10,7 @@ const TicketLink = () => {
   return (
     <StyledWrapper>
       <StyledTicketLink disableElevation disableRipple href="/">
-        <StyledLabel>asdasda</StyledLabel>
+        <StyledLabel>в кино</StyledLabel>
         <ConfirmationNumberIcon />
       </StyledTicketLink>
     </StyledWrapper>

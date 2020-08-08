@@ -9,7 +9,7 @@ const StyledLogo = styled.a`
   display: block;
   height: 2.4rem;
   width: 7rem;
-  background-image: url('/logo_cinema.svg');
+  background-image: url('/logo.svg');
   background-repeat: no-repeat;
   background-size: contain;
   transform: translateY(-5%);
