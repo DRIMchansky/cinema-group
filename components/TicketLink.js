@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import Button from '@material-ui/core/Button'
 import ConfirmationNumberIcon from '@material-ui/icons/ConfirmationNumber'
 // utils
-import { white } from '../utils/colors'
+import { colors } from '../utils/cssConfig'
 
 const TicketLink = () => {
   return (
@@ -25,7 +25,7 @@ const StyledWrapper = styled.div`
 `
 
 const StyledTicketLink = styled(Button)`
-  color: ${white} !important;
+  color: ${colors.white} !important;
 `
 
 const StyledLabel = styled.span`

@@ -1,6 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
-import { general } from './fonts'
-import { md, xl } from './media'
+import { fonts, breakpoints } from './cssConfig'
 
 const GlobalStyles = createGlobalStyle`
 *,
@@ -14,11 +13,11 @@ html {
   -webkit-text-size-adjust: 100%; 
   font-size: 16px;
 
-  @media(${md}) {
+  @media(${breakpoints.medium}) {
     font-size: 18px;
   }
   
-  @media(${xl}) {
+  @media(${breakpoints.extra}) {
     font-size: 20px;
   }
 }
@@ -26,7 +25,7 @@ html {
 body {
   height: 100%;
   margin: 0;
-  font-family: ${general};
+  font-family: ${fonts.main};
 }
 
 div#__next {

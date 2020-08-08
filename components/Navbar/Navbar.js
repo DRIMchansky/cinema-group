@@ -3,7 +3,6 @@ import styled from 'styled-components'
 // components
 import NavbarList from './NavbarList'
 // utils
-import { white, primary } from '../../utils/colors'
 
 const Navbar = ({ type }) => {
   return (

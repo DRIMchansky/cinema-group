@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import NavbarLink from './NavbarLink'
 import NavbarSubList from './NavbarSubList'
 // utils
-import { white, primary } from '../../utils/colors'
+
 // data
 import { navigation } from '../../data/navigation'
 

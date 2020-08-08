@@ -2,7 +2,7 @@
 import styled from 'styled-components'
 import Link from 'next/link'
 // utils
-import { white, primary } from '../../utils/colors'
+import { colors } from '../../utils/cssConfig'
 
 const NavbarLink = ({ name, href, type }) => {
   return (
@@ -14,7 +14,7 @@ const NavbarLink = ({ name, href, type }) => {
 
 const StyledNavbarLink = styled.a`
   display: block;
-  color: ${white};
+  color: ${colors.white};
   text-decoration: none;
   font-weight: 500;
   font-size: ${(props) => (props.type === 'primary' ? '1.2rem' : '1rem')};

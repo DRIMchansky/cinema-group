@@ -11,7 +11,7 @@ const NavbarSubList = ({ cities }) => {
           <li key={city.city}>
             <StyledCity>{city.city}</StyledCity>
             {city.links.map((link) => {
-              return <NavbarSubLink branch={link.branch} name={link.name} href={link.href} />
+              return <NavbarSubLink branch={link.branch} name={link.name} href={link.href} key={link.name} />
             })}
           </li>
         )

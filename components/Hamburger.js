@@ -3,12 +3,12 @@ import styled from 'styled-components'
 // components
 import { FoldIcon, CloseIcon } from './NavIcons'
 // utils
-import { white } from '../utils/colors'
+import { colors } from '../utils/cssConfig'
 
 const Hamburger = ({ isActive, setActive }) => {
   return (
     <StyledHamburger onClick={() => setActive(!isActive)}>
-      {isActive ? <CloseIcon color={white} /> : <FoldIcon color={white} />}
+      {isActive ? <CloseIcon color={colors.white} /> : <FoldIcon color={colors.white} />}
     </StyledHamburger>
   )
 }
