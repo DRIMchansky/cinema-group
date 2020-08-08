@@ -3,7 +3,7 @@ import styled from 'styled-components'
 // components
 import Navbar from './Navbar/Navbar'
 // utils
-import { colors, constants } from '../utils/cssConfig'
+import { colors, constants, breakpoints } from '../utils/cssConfig'
 
 const MobileHeader = ({ isActive }) => {
   return (
@@ -13,7 +13,7 @@ const MobileHeader = ({ isActive }) => {
   )
 }
 
-const StyledMobileHeader = styled.header`
+const StyledMobileHeader = styled.nav`
   display: flex;
   position: fixed;
   background: ${colors.white};
@@ -30,6 +30,11 @@ const StyledMobileHeader = styled.header`
   padding-top: 4rem;
   overflow-y: scroll;
   background: ${colors.background};
+
+  @media (min-width: ${breakpoints.medium}) {
+    display: none;
+    visibility: none;
+  }
 `
 
 export default MobileHeader
