@@ -2,7 +2,7 @@
 import styled from 'styled-components'
 import Link from 'next/link'
 // utils
-import { colors } from '../../utils/cssConfig'
+import { colors, breakpoints } from '../../utils/cssConfig'
 
 const NavbarLink = ({ name, href }) => {
   return (
@@ -20,6 +20,12 @@ const StyledNavbarLink = styled.a`
   font-size: 1.3rem;
   padding: 0.7rem 0 0.3rem 0.5rem;
   width: 100%;
+
+  @media (min-width: ${breakpoints.medium}) {
+    font-weight: 400;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+  }
 `
 
 export default NavbarLink

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 // components
 import Link from 'next/link'
 // utils
-import { colors } from '../../utils/cssConfig'
+import { colors, breakpoints } from '../../utils/cssConfig'
 
 const NavbarSubLink = ({ branch, name, href }) => {
   return (
@@ -25,6 +25,10 @@ const StyledNavbarSubLink = styled.a`
 
   &:hover {
     background: ${colors.lighter};
+  }
+
+  @media (min-width: ${breakpoints.medium}) {
+    border-radius: 4px;
   }
 `
 const StyledBranch = styled.span`

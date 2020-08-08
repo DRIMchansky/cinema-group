@@ -14,9 +14,14 @@ const StyledLogo = styled.a`
   background-size: contain;
   transform: translateY(-5%);
 
+  &:focus {
+    outline: none;
+  }
+
   @media (min-width: 960px) {
-    height: 3.4rem;
-    width: 9rem;
+    height: 3.6rem;
+    width: 11rem;
+    transform: translateY(3%);
   }
 `
 

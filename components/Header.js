@@ -12,7 +12,7 @@ import { colors, breakpoints } from '../utils/cssConfig'
 const Header = ({ isActive, setActive }) => {
   return (
     <StyledHeader>
-      <StyledContainer maxWidth="ex">
+      <StyledContainer maxWidth="xl">
         <Hamburger isActive={isActive} setActive={setActive} />
         <Logo />
         <Navbar type="desctop" />
@@ -35,6 +35,10 @@ const StyledContainer = styled(Container)`
   @media (min-width: ${breakpoints.small}) {
     justify-content: flex-start;
     padding-left: 4rem !important;
+  }
+
+  @media (min-width: ${breakpoints.medium}) {
+    padding-left: 24px !important;
   }
 `
 

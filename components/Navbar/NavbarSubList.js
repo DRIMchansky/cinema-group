@@ -31,16 +31,24 @@ const StyledNavbarSublist = styled.ul`
   @media (min-width: ${breakpoints.medium}) {
     position: absolute;
     background: ${colors.background};
-    min-width: 15ch;
     left: 50%;
-    top: calc(100% - 0.25rem);
+    top: 3.8rem;
     transition: 280ms all 120ms ease-out;
     transform: rotateX(-90deg) translateX(-50%);
     transform-origin: top center;
     opacity: 0.3;
-    padding: 0.5em 0;
+    padding: 0.5rem;
     border-radius: 4px;
-    box-shadow: 0 0.15em 0.25em rgba(black, 0.25);
+    box-shadow: ${shadows.three};
+    display: flex;
+
+    & > li {
+      min-width: 250px;
+    }
+
+    & > li:not(:first-child) {
+      margin-left: 1rem;
+    }
 
     &:before {
       content: '';
@@ -53,13 +61,6 @@ const StyledNavbarSublist = styled.ul`
       transition: 280ms all 120ms ease-out;
       opacity: 0;
     }
-
-    &:hover,
-    &:focus-within {
-    }
-  }
-
-  & li {
   }
 `
 
