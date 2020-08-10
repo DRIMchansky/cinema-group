@@ -1,6 +1,7 @@
 // components
 import Head from 'next/head'
 import Layout from '../components/Layout'
+import PromotionSlider from '../components/PromotionSlider'
 
 export default function Home() {
   return (
@@ -8,7 +9,9 @@ export default function Home() {
       <Head>
         <title>Рублион Синема</title>
       </Head>
-      <Layout>Главная страница</Layout>
+      <Layout>
+        <PromotionSlider />
+      </Layout>
     </>
   )
 }

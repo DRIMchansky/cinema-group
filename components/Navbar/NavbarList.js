@@ -13,13 +13,8 @@ const NavbarList = () => {
     <StyledNavbarList>
       {navigation.map((item) => {
         return (
-          <StyledNavbarItem>
-            <NavbarLink
-              name={item.primaryTitle}
-              href={item.primaryTitleHref}
-              type="primary"
-              key={item.primaryTitle}
-            />
+          <StyledNavbarItem key={item.primaryTitle}>
+            <NavbarLink name={item.primaryTitle} href={item.primaryTitleHref} type="primary" />
             <NavbarSubList cities={item.cities} />
           </StyledNavbarItem>
         )
