@@ -19,13 +19,14 @@ const TicketLink = () => {
 
 const StyledWrapper = styled.div`
   position: absolute;
-  right: 0;
+  right: 1rem;
   top: 50%;
   transform: translateY(-50%);
 `
 
 const StyledTicketLink = styled(Button)`
   color: ${colors.white} !important;
+  background: ${colors.lighter} !important;
 `
 
 const StyledLabel = styled.span`
