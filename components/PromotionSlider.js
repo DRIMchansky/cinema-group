@@ -2,6 +2,8 @@
 import { useEffect, useState } from 'react'
 import styled from 'styled-components'
 // components
+import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper'
+import { Swiper, SwiperSlide } from 'swiper/react'
 
 const client = require('contentful').createClient({
   space: process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID,
@@ -27,7 +29,29 @@ const PromotionSlider = () => {
 
   console.log(slides)
 
-  return <div></div>
+  // install Swiper components
+  SwiperCore.use([Navigation, Pagination, Scrollbar, A11y])
+
+  return (
+    <Swiper
+      spaceBetween={50}
+      slidesPerView={3}
+      navigation
+      pagination={{ clickable: true }}
+      scrollbar={{ draggable: true }}
+    >
+      <SwiperSlide>Slide 1</SwiperSlide>
+      <SwiperSlide>Slide 2</SwiperSlide>
+      <SwiperSlide>Slide 3</SwiperSlide>
+      <SwiperSlide>Slide 4</SwiperSlide>
+    </Swiper>
+  )
 }
+
+const StyledWrapper = styled.div``
+
+const StyledSwiper = styled(Swiper)``
+
+const StyledSlide = styled(SwiperSlide)``
 
 export default PromotionSlider
