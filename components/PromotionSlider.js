@@ -4,24 +4,21 @@ import styled from 'styled-components'
 // components
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
-
-const client = require('contentful').createClient({
-  space: process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID,
-  accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN,
-})
+// api
+import fetchPromotions from '../api/fetchPromotions'
 
 const PromotionSlider = () => {
-  async function fetchEntries() {
-    const entries = await client.getEntries('promotion')
-    if (entries.items) return entries.items
-    console.log(`Error getting Entries for ${contentType.name}.`)
-  }
+  // async function fetchEntries() {
+  //   const entries = await client.getEntries('promotion')
+  //   if (entries.items) return entries.items
+  //   console.log(`Error getting Entries for ${contentType.name}.`)
+  // }
 
   const [slides, setSlides] = useState([])
 
   useEffect(() => {
     async function getSlides() {
-      const allSlides = await fetchEntries()
+      const allSlides = await fetchPromotions()
       setSlides([...allSlides])
     }
     getSlides()
@@ -33,17 +30,10 @@ const PromotionSlider = () => {
   SwiperCore.use([Navigation, Pagination, Scrollbar, A11y])
 
   return (
-    <Swiper
-      spaceBetween={50}
-      slidesPerView={3}
-      navigation
-      pagination={{ clickable: true }}
-      scrollbar={{ draggable: true }}
-    >
+    <Swiper slidesPerView={2} navigation pagination={{ clickable: true }} scrollbar={{ draggable: true }}>
       <SwiperSlide>Slide 1</SwiperSlide>
       <SwiperSlide>Slide 2</SwiperSlide>
       <SwiperSlide>Slide 3</SwiperSlide>
-      <SwiperSlide>Slide 4</SwiperSlide>
     </Swiper>
   )
 }
