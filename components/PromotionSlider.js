@@ -2,18 +2,14 @@
 import { useEffect, useState } from 'react'
 import styled from 'styled-components'
 // components
+import Link from 'next/link'
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
+import Container from '@material-ui/core/Container'
 // api
 import fetchPromotions from '../api/fetchPromotions'
 
 const PromotionSlider = () => {
-  // async function fetchEntries() {
-  //   const entries = await client.getEntries('promotion')
-  //   if (entries.items) return entries.items
-  //   console.log(`Error getting Entries for ${contentType.name}.`)
-  // }
-
   const [slides, setSlides] = useState([])
 
   useEffect(() => {
@@ -30,18 +26,47 @@ const PromotionSlider = () => {
   SwiperCore.use([Navigation, Pagination, Scrollbar, A11y])
 
   return (
-    <Swiper slidesPerView={2} navigation pagination={{ clickable: true }} scrollbar={{ draggable: true }}>
-      <SwiperSlide>Slide 1</SwiperSlide>
-      <SwiperSlide>Slide 2</SwiperSlide>
-      <SwiperSlide>Slide 3</SwiperSlide>
-    </Swiper>
+    <StyledContainer maxWidth="xl">
+      <StyledSwiper slidesPerView={1} navigation pagination={{ clickable: true }} spaceBetween={50}>
+        {slides.map((slide) => {
+          return (
+            <SwiperSlide>
+              <Link href="/bowling">
+                <StyledWrapper>
+                  <StyledInner>Slide 1</StyledInner>
+                </StyledWrapper>
+              </Link>
+            </SwiperSlide>
+          )
+        })}
+      </StyledSwiper>
+    </StyledContainer>
   )
 }
 
-const StyledWrapper = styled.div``
+const StyledContainer = styled(Container)`
+  margin-top: 1rem;
+`
 
-const StyledSwiper = styled(Swiper)``
+const StyledSwiper = styled(Swiper)`
+  display: block;
+  height: 100%;
+  width: 100%;
+`
 
-const StyledSlide = styled(SwiperSlide)``
+const StyledWrapper = styled.a`
+  position: relative;
+  display: block;
+  height: 0;
+  padding-bottom: 33.33%;
+`
+
+const StyledInner = styled.div`
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: pink;
+  border-radius: 20px;
+`
 
 export default PromotionSlider
