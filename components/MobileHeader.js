@@ -26,7 +26,7 @@ const StyledMobileHeader = styled.nav`
   top: 0;
   height: 100%;
   width: ${constants.MOBILE_MENU_WIDTH}px;
-  z-index: 2;
+  z-index: 3;
   padding-top: 4rem;
   overflow-y: scroll;
   background: ${colors.background};

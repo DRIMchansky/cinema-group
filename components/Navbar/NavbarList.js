@@ -27,6 +27,7 @@ const StyledNavbarList = styled.ul`
   list-style-type: none;
   margin: 0;
   padding: 0;
+  z-index: 10;
 
   @media (min-width: ${breakpoints.medium}) {
     display: flex;
@@ -36,8 +37,16 @@ const StyledNavbarList = styled.ul`
 const StyledNavbarItem = styled.li`
   position: relative;
 
+  &:not(:first-child) {
+    margin-top: 1rem;
+  }
+
   @media (min-width: ${breakpoints.medium}) {
     color: red;
+
+    &:not(:first-child) {
+      margin-top: 0;
+    }
 
     &:hover,
     &:focus-within {

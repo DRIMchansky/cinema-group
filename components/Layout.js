@@ -49,6 +49,7 @@ const OverflowStyled = styled.div`
   transition: opacity 0.2s ease-out;
   display: ${(props) => (props.isActive ? 'block' : 'none')};
   opacity: ${(props) => (props.isActive ? '0.7' : '0')};
+  z-index: 2;
 `
 
 export default Layout
