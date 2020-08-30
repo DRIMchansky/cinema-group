@@ -2,15 +2,26 @@
 import Head from 'next/head'
 import Layout from '../components/Layout'
 import PromotionSlider from '../components/PromotionSlider'
+import fetchPromotions from '../api/fetchPromotions'
 
-export default function Home() {
+export async function getStaticProps() {
+  const entries = await fetchPromotions()
+
+  return {
+    props: {
+      entries: entries,
+    },
+  }
+}
+
+export default function Home({ entries }) {
   return (
     <>
       <Head>
         <title>Рублион Синема</title>
       </Head>
       <Layout>
-        <PromotionSlider />
+        <PromotionSlider entries={entries} />
       </Layout>
     </>
   )

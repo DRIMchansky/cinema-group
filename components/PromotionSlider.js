@@ -3,37 +3,40 @@ import { useEffect, useState } from 'react'
 import styled from 'styled-components'
 // components
 import Link from 'next/link'
-import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper'
+import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, Autoplay, Lazy, EffectFade } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import Container from '@material-ui/core/Container'
-// api
-import fetchPromotions from '../api/fetchPromotions'
+// utils
+import { breakpoints, colors } from '../utils/cssConfig'
 
-const PromotionSlider = () => {
-  const [slides, setSlides] = useState([])
-
-  useEffect(() => {
-    async function getSlides() {
-      const allSlides = await fetchPromotions()
-      setSlides([...allSlides])
-    }
-    getSlides()
-  }, [])
-
-  console.log(slides)
-
+const PromotionSlider = ({ entries }) => {
   // install Swiper components
-  SwiperCore.use([Navigation, Pagination, Scrollbar, A11y])
+  SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay, Lazy, EffectFade])
 
   return (
     <StyledContainer maxWidth="xl">
-      <StyledSwiper slidesPerView={1} navigation pagination={{ clickable: true }} spaceBetween={50}>
-        {slides.map((slide) => {
+      <StyledSwiper
+        slidesPerView={1}
+        navigation
+        pagination={{ clickable: true }}
+        spaceBetween={50}
+        loop={true}
+        autoplay={{
+          delay: 4000,
+          disableOnInteraction: true,
+        }}
+        lazy={{ loadPrevNext: true }}
+        loadOnTransitionStart={true}
+      >
+        {entries.map((slide) => {
           return (
             <SwiperSlide>
               <Link href="/bowling">
                 <StyledWrapper>
-                  <StyledInner>Slide 1</StyledInner>
+                  <StyledImage
+                    className="swiper-lazy"
+                    data-src={`https://${slide.fields.image.fields.file.url}`}
+                  />
                 </StyledWrapper>
               </Link>
             </SwiperSlide>
@@ -52,6 +55,32 @@ const StyledSwiper = styled(Swiper)`
   display: block;
   height: 100%;
   width: 100%;
+  border-radius: 20px;
+
+  & .swiper-lazy {
+  }
+
+  & .swiper-button-next,
+  & .swiper-button-prev {
+    color: ${colors.white};
+  }
+
+  & .swiper-pagination-bullet {
+    background: ${colors.white};
+    opacity: 0.5;
+  }
+  & .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: ${colors.white};
+    opacity: 1;
+  }
+
+  @media (max-width: ${breakpoints.medium}) {
+    & .swiper-button-next,
+    & .swiper-button-prev {
+      display: none;
+      visibility: hidden;
+    }
+  }
 `
 
 const StyledWrapper = styled.a`
@@ -61,12 +90,13 @@ const StyledWrapper = styled.a`
   padding-bottom: 33.33%;
 `
 
-const StyledInner = styled.div`
+const StyledImage = styled.img`
   position: absolute;
   height: 100%;
   width: 100%;
-  background: pink;
   border-radius: 20px;
+  cursor: pointer;
+  background: ${colors.background};
 `
 
 export default PromotionSlider

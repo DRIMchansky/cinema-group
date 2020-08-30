@@ -5,6 +5,7 @@ import { ThemeProvider } from '@material-ui/styles'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import GlobalStyles from '../utils/GlobalStyles'
 import 'swiper/swiper-bundle.min.css'
+import lazySizes from 'lazysizes'
 
 class MyApp extends App {
   componentDidMount() {
@@ -23,6 +24,7 @@ class MyApp extends App {
         <Head>
           <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+          <link rel="preconnect" href="https://images.ctfassets.net" crossOrigin="true" />
           <link rel="preload" as="style" href="$CSS&display=swap" />
           <link
             rel="stylesheet"
