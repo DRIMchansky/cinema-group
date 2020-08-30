@@ -16,21 +16,20 @@ const PromotionSlider = ({ entries }) => {
   return (
     <StyledContainer maxWidth="xl">
       <StyledSwiper
-        slidesPerView={1}
+        slidesperview={1}
         navigation
         pagination={{ clickable: true }}
-        spaceBetween={50}
+        spacebetween={50}
         loop={true}
         autoplay={{
           delay: 4000,
           disableOnInteraction: true,
         }}
         lazy={{ loadPrevNext: true }}
-        loadOnTransitionStart={true}
       >
         {entries.map((slide) => {
           return (
-            <SwiperSlide>
+            <SwiperSlide key={slide.sys.id}>
               <Link href="/bowling">
                 <StyledWrapper>
                   <StyledImage

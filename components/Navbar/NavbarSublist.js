@@ -7,7 +7,7 @@ import { colors, breakpoints, shadows } from '../../utils/cssConfig'
 
 const NavbarSubList = ({ cities }) => {
   return (
-    <StyledNavbarSublist>
+    <StyledNavbarSubList>
       {cities.map((city) => {
         return (
           <li key={city.city}>
@@ -18,11 +18,11 @@ const NavbarSubList = ({ cities }) => {
           </li>
         )
       })}
-    </StyledNavbarSublist>
+    </StyledNavbarSubList>
   )
 }
 
-const StyledNavbarSublist = styled.ul`
+const StyledNavbarSubList = styled.ul`
   color: ${colors.white};
   list-style-type: none;
   margin: 0;

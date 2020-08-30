@@ -1,0 +1,947 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavbarList renders correctly 1`] = `
+.c2 {
+  display: block;
+  color: #fff;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.3rem;
+  padding: 0.7rem 0 0.3rem 0.5rem;
+  width: 100%;
+}
+
+.c5 {
+  display: block;
+  padding: 0.4rem 0 0.4rem 0.5rem;
+  color: #fff;
+  -webkit-transition: background 0.1s ease;
+  transition: background 0.1s ease;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c5:hover {
+  background: #324082;
+}
+
+.c6 {
+  display: block;
+  color: #eebbc3;
+  font-size: 0.75rem;
+}
+
+.c7 {
+  display: block;
+  font-size: 1.1rem;
+}
+
+.c3 {
+  color: #fff;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c4 {
+  font-size: 1.1rem;
+  padding-left: 1rem;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.c4:before {
+  content: '';
+  position: absolute;
+  height: 80%;
+  width: 3px;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background: #eebbc3;
+}
+
+.c0 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+}
+
+.c1 {
+  position: relative;
+}
+
+.c1:not(:first-child) {
+  margin-top: 1rem;
+}
+
+@media (min-width:960px) {
+  .c2 {
+    font-weight: 400;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+  }
+
+  .c2:hover {
+    opacity: 0.8;
+  }
+}
+
+@media (min-width:960px) {
+  .c5 {
+    border-radius: 4px;
+  }
+}
+
+@media (min-width:960px) {
+  .c3 {
+    position: absolute;
+    background: #232946;
+    left: 50%;
+    top: 3.8rem;
+    -webkit-transition: 280ms all 120ms ease-out;
+    transition: 280ms all 120ms ease-out;
+    -webkit-transform: rotateX(-90deg) translateX(-50%);
+    -ms-transform: rotateX(-90deg) translateX(-50%);
+    transform: rotateX(-90deg) translateX(-50%);
+    -webkit-transform-origin: top center;
+    -ms-transform-origin: top center;
+    transform-origin: top center;
+    opacity: 0.3;
+    padding: 0.5rem;
+    border-radius: 4px;
+    box-shadow: 0px 8px 16px rgba(37,37,37,0.1);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .c3 > li {
+    min-width: 250px;
+  }
+
+  .c3 > li:not(:first-child) {
+    margin-left: 1rem;
+  }
+
+  .c3:before {
+    content: '';
+    border: 0.5rem solid transparent;
+    border-bottom-color: #fff;
+    position: absolute;
+    top: calc(100% - 1.25rem);
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-transition: 280ms all 120ms ease-out;
+    transition: 280ms all 120ms ease-out;
+    opacity: 0;
+  }
+}
+
+@media (min-width:960px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width:960px) {
+  .c1 {
+    color: red;
+  }
+
+  .c1:not(:first-child) {
+    margin-top: 0;
+  }
+
+  .c1:hover > ul,
+  .c1:focus-within > ul {
+    opacity: 1;
+    -webkit-transform: rotateX(0) translateX(-50%);
+    -ms-transform: rotateX(0) translateX(-50%);
+    transform: rotateX(0) translateX(-50%);
+  }
+}
+
+<NavbarList>
+  <NavbarList__StyledNavbarList>
+    <ul
+      className="c0"
+    >
+      <NavbarList__StyledNavbarItem
+        key="Сеть кинотеатров"
+      >
+        <li
+          className="c1"
+        >
+          <NavbarLink
+            href="/cinema"
+            name="Сеть кинотеатров"
+            type="primary"
+          >
+            <Link
+              href="/cinema"
+              passHref={true}
+            >
+              <NavbarLink__StyledNavbarLink
+                href="/cinema"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+              >
+                <a
+                  className="c2"
+                  href="/cinema"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                >
+                  Сеть кинотеатров
+                </a>
+              </NavbarLink__StyledNavbarLink>
+            </Link>
+          </NavbarLink>
+          <NavbarSubList
+            cities={
+              Array [
+                Object {
+                  "city": "Сыктывкар",
+                  "links": Array [
+                    Object {
+                      "branch": "«РубЛион Синема»",
+                      "href": "/",
+                      "name": "ТРК «РубликЪ»",
+                    },
+                    Object {
+                      "branch": "«РубЛион Синема»",
+                      "href": "/",
+                      "name": "ТРЦ «Парма»",
+                    },
+                  ],
+                },
+                Object {
+                  "city": "Котлас",
+                  "links": Array [
+                    Object {
+                      "branch": "«Рублион Синема»",
+                      "href": "/",
+                      "name": "ТРЦ «Столица»",
+                    },
+                  ],
+                },
+              ]
+            }
+          >
+            <NavbarSubList__StyledNavbarSubList>
+              <ul
+                className="c3"
+              >
+                <li
+                  key="Сыктывкар"
+                >
+                  <NavbarSubList__StyledCity>
+                    <span
+                      className="c4"
+                    >
+                      Сыктывкар
+                    </span>
+                  </NavbarSubList__StyledCity>
+                  <NavbarSubLink
+                    branch="«РубЛион Синема»"
+                    href="/"
+                    key="ТРК «РубликЪ»"
+                    name="ТРК «РубликЪ»"
+                  >
+                    <Link
+                      href="/"
+                      passHref={true}
+                    >
+                      <NavbarSubLink__StyledNavbarSubLink
+                        href="/"
+                        onClick={[Function]}
+                        onMouseEnter={[Function]}
+                      >
+                        <a
+                          className="c5"
+                          href="/"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                        >
+                          <NavbarSubLink__StyledBranch>
+                            <span
+                              className="c6"
+                            >
+                              «РубЛион Синема»
+                            </span>
+                          </NavbarSubLink__StyledBranch>
+                          <NavbarSubLink__StyledName>
+                            <span
+                              className="c7"
+                            >
+                              ТРК «РубликЪ»
+                            </span>
+                          </NavbarSubLink__StyledName>
+                        </a>
+                      </NavbarSubLink__StyledNavbarSubLink>
+                    </Link>
+                  </NavbarSubLink>
+                  <NavbarSubLink
+                    branch="«РубЛион Синема»"
+                    href="/"
+                    key="ТРЦ «Парма»"
+                    name="ТРЦ «Парма»"
+                  >
+                    <Link
+                      href="/"
+                      passHref={true}
+                    >
+                      <NavbarSubLink__StyledNavbarSubLink
+                        href="/"
+                        onClick={[Function]}
+                        onMouseEnter={[Function]}
+                      >
+                        <a
+                          className="c5"
+                          href="/"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                        >
+                          <NavbarSubLink__StyledBranch>
+                            <span
+                              className="c6"
+                            >
+                              «РубЛион Синема»
+                            </span>
+                          </NavbarSubLink__StyledBranch>
+                          <NavbarSubLink__StyledName>
+                            <span
+                              className="c7"
+                            >
+                              ТРЦ «Парма»
+                            </span>
+                          </NavbarSubLink__StyledName>
+                        </a>
+                      </NavbarSubLink__StyledNavbarSubLink>
+                    </Link>
+                  </NavbarSubLink>
+                </li>
+                <li
+                  key="Котлас"
+                >
+                  <NavbarSubList__StyledCity>
+                    <span
+                      className="c4"
+                    >
+                      Котлас
+                    </span>
+                  </NavbarSubList__StyledCity>
+                  <NavbarSubLink
+                    branch="«Рублион Синема»"
+                    href="/"
+                    key="ТРЦ «Столица»"
+                    name="ТРЦ «Столица»"
+                  >
+                    <Link
+                      href="/"
+                      passHref={true}
+                    >
+                      <NavbarSubLink__StyledNavbarSubLink
+                        href="/"
+                        onClick={[Function]}
+                        onMouseEnter={[Function]}
+                      >
+                        <a
+                          className="c5"
+                          href="/"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                        >
+                          <NavbarSubLink__StyledBranch>
+                            <span
+                              className="c6"
+                            >
+                              «Рублион Синема»
+                            </span>
+                          </NavbarSubLink__StyledBranch>
+                          <NavbarSubLink__StyledName>
+                            <span
+                              className="c7"
+                            >
+                              ТРЦ «Столица»
+                            </span>
+                          </NavbarSubLink__StyledName>
+                        </a>
+                      </NavbarSubLink__StyledNavbarSubLink>
+                    </Link>
+                  </NavbarSubLink>
+                </li>
+              </ul>
+            </NavbarSubList__StyledNavbarSubList>
+          </NavbarSubList>
+        </li>
+      </NavbarList__StyledNavbarItem>
+      <NavbarList__StyledNavbarItem
+        key="Сеть игровых центров"
+      >
+        <li
+          className="c1"
+        >
+          <NavbarLink
+            href="/game"
+            name="Сеть игровых центров"
+            type="primary"
+          >
+            <Link
+              href="/game"
+              passHref={true}
+            >
+              <NavbarLink__StyledNavbarLink
+                href="/game"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+              >
+                <a
+                  className="c2"
+                  href="/game"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                >
+                  Сеть игровых центров
+                </a>
+              </NavbarLink__StyledNavbarLink>
+            </Link>
+          </NavbarLink>
+          <NavbarSubList
+            cities={
+              Array [
+                Object {
+                  "city": "Сыктывкар",
+                  "links": Array [
+                    Object {
+                      "branch": "Игротека",
+                      "href": "/",
+                      "name": "ТРК «РубликЪ»",
+                    },
+                    Object {
+                      "branch": "Игротека",
+                      "href": "/",
+                      "name": "ТРЦ «Июнь»",
+                    },
+                    Object {
+                      "branch": "Игротека «Kids Club»",
+                      "href": "/",
+                      "name": "ТРЦ «Парма»",
+                    },
+                  ],
+                },
+                Object {
+                  "city": "Котлас",
+                  "links": Array [
+                    Object {
+                      "branch": "Игротека",
+                      "href": "/",
+                      "name": "ТРЦ «Столица»",
+                    },
+                  ],
+                },
+              ]
+            }
+          >
+            <NavbarSubList__StyledNavbarSubList>
+              <ul
+                className="c3"
+              >
+                <li
+                  key="Сыктывкар"
+                >
+                  <NavbarSubList__StyledCity>
+                    <span
+                      className="c4"
+                    >
+                      Сыктывкар
+                    </span>
+                  </NavbarSubList__StyledCity>
+                  <NavbarSubLink
+                    branch="Игротека"
+                    href="/"
+                    key="ТРК «РубликЪ»"
+                    name="ТРК «РубликЪ»"
+                  >
+                    <Link
+                      href="/"
+                      passHref={true}
+                    >
+                      <NavbarSubLink__StyledNavbarSubLink
+                        href="/"
+                        onClick={[Function]}
+                        onMouseEnter={[Function]}
+                      >
+                        <a
+                          className="c5"
+                          href="/"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                        >
+                          <NavbarSubLink__StyledBranch>
+                            <span
+                              className="c6"
+                            >
+                              Игротека
+                            </span>
+                          </NavbarSubLink__StyledBranch>
+                          <NavbarSubLink__StyledName>
+                            <span
+                              className="c7"
+                            >
+                              ТРК «РубликЪ»
+                            </span>
+                          </NavbarSubLink__StyledName>
+                        </a>
+                      </NavbarSubLink__StyledNavbarSubLink>
+                    </Link>
+                  </NavbarSubLink>
+                  <NavbarSubLink
+                    branch="Игротека"
+                    href="/"
+                    key="ТРЦ «Июнь»"
+                    name="ТРЦ «Июнь»"
+                  >
+                    <Link
+                      href="/"
+                      passHref={true}
+                    >
+                      <NavbarSubLink__StyledNavbarSubLink
+                        href="/"
+                        onClick={[Function]}
+                        onMouseEnter={[Function]}
+                      >
+                        <a
+                          className="c5"
+                          href="/"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                        >
+                          <NavbarSubLink__StyledBranch>
+                            <span
+                              className="c6"
+                            >
+                              Игротека
+                            </span>
+                          </NavbarSubLink__StyledBranch>
+                          <NavbarSubLink__StyledName>
+                            <span
+                              className="c7"
+                            >
+                              ТРЦ «Июнь»
+                            </span>
+                          </NavbarSubLink__StyledName>
+                        </a>
+                      </NavbarSubLink__StyledNavbarSubLink>
+                    </Link>
+                  </NavbarSubLink>
+                  <NavbarSubLink
+                    branch="Игротека «Kids Club»"
+                    href="/"
+                    key="ТРЦ «Парма»"
+                    name="ТРЦ «Парма»"
+                  >
+                    <Link
+                      href="/"
+                      passHref={true}
+                    >
+                      <NavbarSubLink__StyledNavbarSubLink
+                        href="/"
+                        onClick={[Function]}
+                        onMouseEnter={[Function]}
+                      >
+                        <a
+                          className="c5"
+                          href="/"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                        >
+                          <NavbarSubLink__StyledBranch>
+                            <span
+                              className="c6"
+                            >
+                              Игротека «Kids Club»
+                            </span>
+                          </NavbarSubLink__StyledBranch>
+                          <NavbarSubLink__StyledName>
+                            <span
+                              className="c7"
+                            >
+                              ТРЦ «Парма»
+                            </span>
+                          </NavbarSubLink__StyledName>
+                        </a>
+                      </NavbarSubLink__StyledNavbarSubLink>
+                    </Link>
+                  </NavbarSubLink>
+                </li>
+                <li
+                  key="Котлас"
+                >
+                  <NavbarSubList__StyledCity>
+                    <span
+                      className="c4"
+                    >
+                      Котлас
+                    </span>
+                  </NavbarSubList__StyledCity>
+                  <NavbarSubLink
+                    branch="Игротека"
+                    href="/"
+                    key="ТРЦ «Столица»"
+                    name="ТРЦ «Столица»"
+                  >
+                    <Link
+                      href="/"
+                      passHref={true}
+                    >
+                      <NavbarSubLink__StyledNavbarSubLink
+                        href="/"
+                        onClick={[Function]}
+                        onMouseEnter={[Function]}
+                      >
+                        <a
+                          className="c5"
+                          href="/"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                        >
+                          <NavbarSubLink__StyledBranch>
+                            <span
+                              className="c6"
+                            >
+                              Игротека
+                            </span>
+                          </NavbarSubLink__StyledBranch>
+                          <NavbarSubLink__StyledName>
+                            <span
+                              className="c7"
+                            >
+                              ТРЦ «Столица»
+                            </span>
+                          </NavbarSubLink__StyledName>
+                        </a>
+                      </NavbarSubLink__StyledNavbarSubLink>
+                    </Link>
+                  </NavbarSubLink>
+                </li>
+              </ul>
+            </NavbarSubList__StyledNavbarSubList>
+          </NavbarSubList>
+        </li>
+      </NavbarList__StyledNavbarItem>
+      <NavbarList__StyledNavbarItem
+        key="Сеть боулинг центров"
+      >
+        <li
+          className="c1"
+        >
+          <NavbarLink
+            href="/bowling"
+            name="Сеть боулинг центров"
+            type="primary"
+          >
+            <Link
+              href="/bowling"
+              passHref={true}
+            >
+              <NavbarLink__StyledNavbarLink
+                href="/bowling"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+              >
+                <a
+                  className="c2"
+                  href="/bowling"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                >
+                  Сеть боулинг центров
+                </a>
+              </NavbarLink__StyledNavbarLink>
+            </Link>
+          </NavbarLink>
+          <NavbarSubList
+            cities={
+              Array [
+                Object {
+                  "city": "Сыктывкар",
+                  "links": Array [
+                    Object {
+                      "branch": "Боулинг-центр",
+                      "href": "/",
+                      "name": "ТРЦ «Июнь»",
+                    },
+                    Object {
+                      "branch": "Боулинг-центр",
+                      "href": "/",
+                      "name": "ТРК «РубликЪ»",
+                    },
+                  ],
+                },
+              ]
+            }
+          >
+            <NavbarSubList__StyledNavbarSubList>
+              <ul
+                className="c3"
+              >
+                <li
+                  key="Сыктывкар"
+                >
+                  <NavbarSubList__StyledCity>
+                    <span
+                      className="c4"
+                    >
+                      Сыктывкар
+                    </span>
+                  </NavbarSubList__StyledCity>
+                  <NavbarSubLink
+                    branch="Боулинг-центр"
+                    href="/"
+                    key="ТРЦ «Июнь»"
+                    name="ТРЦ «Июнь»"
+                  >
+                    <Link
+                      href="/"
+                      passHref={true}
+                    >
+                      <NavbarSubLink__StyledNavbarSubLink
+                        href="/"
+                        onClick={[Function]}
+                        onMouseEnter={[Function]}
+                      >
+                        <a
+                          className="c5"
+                          href="/"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                        >
+                          <NavbarSubLink__StyledBranch>
+                            <span
+                              className="c6"
+                            >
+                              Боулинг-центр
+                            </span>
+                          </NavbarSubLink__StyledBranch>
+                          <NavbarSubLink__StyledName>
+                            <span
+                              className="c7"
+                            >
+                              ТРЦ «Июнь»
+                            </span>
+                          </NavbarSubLink__StyledName>
+                        </a>
+                      </NavbarSubLink__StyledNavbarSubLink>
+                    </Link>
+                  </NavbarSubLink>
+                  <NavbarSubLink
+                    branch="Боулинг-центр"
+                    href="/"
+                    key="ТРК «РубликЪ»"
+                    name="ТРК «РубликЪ»"
+                  >
+                    <Link
+                      href="/"
+                      passHref={true}
+                    >
+                      <NavbarSubLink__StyledNavbarSubLink
+                        href="/"
+                        onClick={[Function]}
+                        onMouseEnter={[Function]}
+                      >
+                        <a
+                          className="c5"
+                          href="/"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                        >
+                          <NavbarSubLink__StyledBranch>
+                            <span
+                              className="c6"
+                            >
+                              Боулинг-центр
+                            </span>
+                          </NavbarSubLink__StyledBranch>
+                          <NavbarSubLink__StyledName>
+                            <span
+                              className="c7"
+                            >
+                              ТРК «РубликЪ»
+                            </span>
+                          </NavbarSubLink__StyledName>
+                        </a>
+                      </NavbarSubLink__StyledNavbarSubLink>
+                    </Link>
+                  </NavbarSubLink>
+                </li>
+              </ul>
+            </NavbarSubList__StyledNavbarSubList>
+          </NavbarSubList>
+        </li>
+      </NavbarList__StyledNavbarItem>
+      <NavbarList__StyledNavbarItem
+        key="Сеть кафе"
+      >
+        <li
+          className="c1"
+        >
+          <NavbarLink
+            href="/cafe"
+            name="Сеть кафе"
+            type="primary"
+          >
+            <Link
+              href="/cafe"
+              passHref={true}
+            >
+              <NavbarLink__StyledNavbarLink
+                href="/cafe"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+              >
+                <a
+                  className="c2"
+                  href="/cafe"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                >
+                  Сеть кафе
+                </a>
+              </NavbarLink__StyledNavbarLink>
+            </Link>
+          </NavbarLink>
+          <NavbarSubList
+            cities={
+              Array [
+                Object {
+                  "city": "Сыктывкар",
+                  "links": Array [
+                    Object {
+                      "branch": "Кафе «РубЛион»",
+                      "href": "/",
+                      "name": "ТРЦ «Июнь»",
+                    },
+                    Object {
+                      "branch": "Кафе*Клуб*Караоке «РубЛион»",
+                      "href": "/",
+                      "name": "ТРК «РубликЪ»",
+                    },
+                  ],
+                },
+              ]
+            }
+          >
+            <NavbarSubList__StyledNavbarSubList>
+              <ul
+                className="c3"
+              >
+                <li
+                  key="Сыктывкар"
+                >
+                  <NavbarSubList__StyledCity>
+                    <span
+                      className="c4"
+                    >
+                      Сыктывкар
+                    </span>
+                  </NavbarSubList__StyledCity>
+                  <NavbarSubLink
+                    branch="Кафе «РубЛион»"
+                    href="/"
+                    key="ТРЦ «Июнь»"
+                    name="ТРЦ «Июнь»"
+                  >
+                    <Link
+                      href="/"
+                      passHref={true}
+                    >
+                      <NavbarSubLink__StyledNavbarSubLink
+                        href="/"
+                        onClick={[Function]}
+                        onMouseEnter={[Function]}
+                      >
+                        <a
+                          className="c5"
+                          href="/"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                        >
+                          <NavbarSubLink__StyledBranch>
+                            <span
+                              className="c6"
+                            >
+                              Кафе «РубЛион»
+                            </span>
+                          </NavbarSubLink__StyledBranch>
+                          <NavbarSubLink__StyledName>
+                            <span
+                              className="c7"
+                            >
+                              ТРЦ «Июнь»
+                            </span>
+                          </NavbarSubLink__StyledName>
+                        </a>
+                      </NavbarSubLink__StyledNavbarSubLink>
+                    </Link>
+                  </NavbarSubLink>
+                  <NavbarSubLink
+                    branch="Кафе*Клуб*Караоке «РубЛион»"
+                    href="/"
+                    key="ТРК «РубликЪ»"
+                    name="ТРК «РубликЪ»"
+                  >
+                    <Link
+                      href="/"
+                      passHref={true}
+                    >
+                      <NavbarSubLink__StyledNavbarSubLink
+                        href="/"
+                        onClick={[Function]}
+                        onMouseEnter={[Function]}
+                      >
+                        <a
+                          className="c5"
+                          href="/"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                        >
+                          <NavbarSubLink__StyledBranch>
+                            <span
+                              className="c6"
+                            >
+                              Кафе*Клуб*Караоке «РубЛион»
+                            </span>
+                          </NavbarSubLink__StyledBranch>
+                          <NavbarSubLink__StyledName>
+                            <span
+                              className="c7"
+                            >
+                              ТРК «РубликЪ»
+                            </span>
+                          </NavbarSubLink__StyledName>
+                        </a>
+                      </NavbarSubLink__StyledNavbarSubLink>
+                    </Link>
+                  </NavbarSubLink>
+                </li>
+              </ul>
+            </NavbarSubList__StyledNavbarSubList>
+          </NavbarSubList>
+        </li>
+      </NavbarList__StyledNavbarItem>
+    </ul>
+  </NavbarList__StyledNavbarList>
+</NavbarList>
+`;
