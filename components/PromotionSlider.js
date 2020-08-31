@@ -10,7 +10,6 @@ import Container from '@material-ui/core/Container'
 import { breakpoints, colors } from '../utils/cssConfig'
 
 const PromotionSlider = ({ entries }) => {
-  // install Swiper components
   SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay, Lazy, EffectFade])
 
   return (
@@ -19,7 +18,7 @@ const PromotionSlider = ({ entries }) => {
         slidesperview={1}
         navigation
         pagination={{ clickable: true }}
-        spacebetween={50}
+        spaceBetween={50}
         loop={true}
         autoplay={{
           delay: 4000,
@@ -30,7 +29,7 @@ const PromotionSlider = ({ entries }) => {
         {entries.map((slide) => {
           return (
             <SwiperSlide key={slide.sys.id}>
-              <Link href="/bowling">
+              <Link href={`/promotions/${slide.fields.slug}`}>
                 <StyledWrapper>
                   <StyledImage
                     className="swiper-lazy"
