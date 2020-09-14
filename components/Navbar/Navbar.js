@@ -1,9 +1,9 @@
 // packages
 import styled from 'styled-components'
 // components
-import NavbarList from './NavbarList'
+import NavbarList from './navbar-list'
 // utils
-import { breakpoints } from '../../utils/cssConfig'
+import { breakpoints } from '../../utils/css-config'
 
 const Navbar = ({ type }) => {
   return (

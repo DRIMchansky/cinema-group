@@ -1,8 +1,8 @@
 // components
 import Head from 'next/head'
-import Layout from '../components/Layout'
-import PromotionSlider from '../components/PromotionSlider'
-import fetchPromotions from '../api/fetchPromotions'
+import Layout from '../components/layout'
+import PromotionSlider from '../components/promotion-slider'
+import fetchPromotions from '../api/fetch-promotions'
 
 export async function getStaticProps() {
   const entries = await fetchPromotions()

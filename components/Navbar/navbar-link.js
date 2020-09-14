@@ -2,7 +2,7 @@
 import styled from 'styled-components'
 import Link from 'next/link'
 // utils
-import { colors, breakpoints } from '../../utils/cssConfig'
+import { colors, breakpoints } from '../../utils/css-config'
 
 const NavbarLink = ({ name, href }) => {
   return (

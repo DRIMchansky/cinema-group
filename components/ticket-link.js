@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import Button from '@material-ui/core/Button'
 import ConfirmationNumberIcon from '@material-ui/icons/ConfirmationNumber'
 // utils
-import { colors } from '../utils/cssConfig'
+import { colors } from '../utils/css-config'
 
 const TicketLink = () => {
   return (

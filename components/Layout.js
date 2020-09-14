@@ -2,7 +2,7 @@
 import styled from 'styled-components'
 import { useState } from 'react'
 // components
-import MobileHeader from './MobileHeader'
+import MobileHeader from './mobile-header'
 
 import Header from './Header'
 

@@ -3,7 +3,7 @@ import App from 'next/app'
 import Head from 'next/head'
 import { ThemeProvider } from '@material-ui/styles'
 import CssBaseline from '@material-ui/core/CssBaseline'
-import GlobalStyles from '../utils/GlobalStyles'
+import GlobalStyles from '../utils/global-styles'
 import 'swiper/swiper-bundle.min.css'
 import lazySizes from 'lazysizes'
 

@@ -1,9 +1,9 @@
 // packages
 import styled from 'styled-components'
 // components
-import { FoldIcon, CloseIcon } from './NavIcons'
+import { FoldIcon, CloseIcon } from './nav-icons'
 // utils
-import { colors } from '../utils/cssConfig'
+import { colors } from '../utils/css-config'
 
 const Hamburger = ({ isActive, setActive }) => {
   return (

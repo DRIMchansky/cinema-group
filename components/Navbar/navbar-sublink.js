@@ -3,7 +3,7 @@ import styled from 'styled-components'
 // components
 import Link from 'next/link'
 // utils
-import { colors, breakpoints } from '../../utils/cssConfig'
+import { colors, breakpoints } from '../../utils/css-config'
 
 const NavbarSubLink = ({ branch, name, href }) => {
   return (

@@ -1,10 +1,10 @@
 // packages
 import styled from 'styled-components'
 // components
-import NavbarLink from './NavbarLink'
-import NavbarSubList from './NavbarSubList'
+import NavbarLink from './navbar-link'
+import NavbarSubList from './navbar-sublist'
 // utils
-import { colors, breakpoints } from '../../utils/cssConfig'
+import { colors, breakpoints } from '../../utils/css-config'
 // data
 import { navigation } from '../../data/navigation'
 

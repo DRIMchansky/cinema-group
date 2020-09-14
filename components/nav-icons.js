@@ -1,7 +1,7 @@
 // packages
 import styled from 'styled-components'
 // utils
-import { colors } from '../utils/cssConfig'
+import { colors } from '../utils/css-config'
 
 const Svg = styled.svg`
   svg {

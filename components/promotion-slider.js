@@ -7,7 +7,7 @@ import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, Autoplay, Lazy, Ef
 import { Swiper, SwiperSlide } from 'swiper/react'
 import Container from '@material-ui/core/Container'
 // utils
-import { breakpoints, colors } from '../utils/cssConfig'
+import { breakpoints, colors } from '../utils/css-config'
 
 const PromotionSlider = ({ entries }) => {
   SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay, Lazy, EffectFade])

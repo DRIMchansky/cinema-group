@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
-import { fonts, breakpoints } from './cssConfig'
+import { fonts, breakpoints } from './css-config'
 
 const GlobalStyles = createGlobalStyle`
 *,

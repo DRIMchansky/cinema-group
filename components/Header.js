@@ -1,13 +1,13 @@
 // packages
 import styled from 'styled-components'
 // components
-import Logo from './Logo'
-import Navbar from './Navbar/Navbar'
-import TicketLink from './TicketLink'
+import Logo from './logo'
+import Navbar from './navbar/navbar'
+import TicketLink from './ticket-link'
 import Container from '@material-ui/core/Container'
-import Hamburger from './Hamburger'
+import Hamburger from './hamburger'
 // utils
-import { colors, breakpoints } from '../utils/cssConfig'
+import { colors, breakpoints } from '../utils/css-config'
 
 const Header = ({ isActive, setActive }) => {
   return (

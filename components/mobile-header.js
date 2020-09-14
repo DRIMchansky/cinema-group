@@ -1,9 +1,9 @@
 // packages
 import styled from 'styled-components'
 // components
-import Navbar from './Navbar/Navbar'
+import Navbar from './navbar/navbar'
 // utils
-import { colors, constants, breakpoints } from '../utils/cssConfig'
+import { colors, constants, breakpoints } from '../utils/css-config'
 
 const MobileHeader = ({ isActive }) => {
   return (

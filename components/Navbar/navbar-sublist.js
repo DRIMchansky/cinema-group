@@ -1,9 +1,9 @@
 // packages
 import styled from 'styled-components'
 // components
-import NavbarSubLink from './NavbarSubLink'
+import NavbarSubLink from './navbar-sublink'
 // utils
-import { colors, breakpoints, shadows } from '../../utils/cssConfig'
+import { colors, breakpoints, shadows } from '../../utils/css-config'
 
 const NavbarSubList = ({ cities }) => {
   return (
