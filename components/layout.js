@@ -4,7 +4,7 @@ import { useState } from 'react'
 // components
 import MobileHeader from './mobile-header'
 
-import Header from './Header'
+import Header from './header'
 
 const Layout = ({ children }) => {
   // mobile menu state state
