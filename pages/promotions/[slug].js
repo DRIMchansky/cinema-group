@@ -1,5 +1,5 @@
-import fetchPromotions from '../../api/fetchPromotions'
-import Layout from '../../components/Layout'
+import fetchPromotions from '../../api/fetch-promotions'
+import Layout from '../../components/layout'
 import contentfulClient from '../../api/contentful'
 import Container from '@material-ui/core/Container'
 
