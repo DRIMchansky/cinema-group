@@ -29,6 +29,7 @@ const StyledHeader = styled.header`
 `
 
 const StyledContainer = styled(Container)`
+  position: relative;
   display: flex !important;
   justify-content: center;
 

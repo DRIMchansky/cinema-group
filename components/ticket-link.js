@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import Button from '@material-ui/core/Button'
 import ConfirmationNumberIcon from '@material-ui/icons/ConfirmationNumber'
 // utils
-import { colors } from '../utils/css-config'
+import { colors, breakpoints } from '../utils/css-config'
 
 const TicketLink = () => {
   return (
@@ -22,6 +22,10 @@ const StyledWrapper = styled.div`
   right: 1rem;
   top: 50%;
   transform: translateY(-50%);
+
+  @media (min-width: ${breakpoints.small}) {
+    right: 24px;
+  }
 `
 
 const StyledTicketLink = styled(Button)`
