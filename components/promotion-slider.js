@@ -4,8 +4,9 @@ import styled from 'styled-components'
 // components
 import Link from 'next/link'
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, Autoplay, Lazy, EffectFade } from 'swiper'
-import { Swiper, SwiperSlide } from 'swiper/react'
 import Container from '@material-ui/core/Container'
+import { Swiper, SwiperSlide } from 'swiper/react'
+
 // utils
 import { breakpoints, colors } from '../utils/css-config'
 
