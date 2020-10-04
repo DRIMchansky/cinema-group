@@ -3,7 +3,7 @@ import Layout from '../../components/layout'
 import contentfulClient from '../../api/contentful'
 import Container from '@material-ui/core/Container'
 
-const Promotion = ({ promotion }) => {
+const Promotion = ({ promotion }: any) => {
   console.log(promotion)
   return (
     <Layout>
@@ -14,7 +14,7 @@ const Promotion = ({ promotion }) => {
   )
 }
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps({ params }: any) {
   const entry = await contentfulClient.getEntries({
     content_type: 'promotion',
     limit: 1,
@@ -31,7 +31,7 @@ export async function getStaticProps({ params }) {
 export async function getStaticPaths() {
   const allPromotions = await fetchPromotions()
 
-  const paths = allPromotions.map((item) => ({
+  const paths = allPromotions.map((item: any) => ({
     params: { slug: item.fields.slug },
   }))
 

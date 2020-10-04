@@ -10,7 +10,7 @@ import Container from '@material-ui/core/Container'
 import { breakpoints, colors } from '../utils/css-config'
 
 type Props = {
-  entries: Array<any>
+  entries: any
 }
 
 const PromotionSlider: React.FC<Props> = ({ entries }) => {
@@ -30,7 +30,7 @@ const PromotionSlider: React.FC<Props> = ({ entries }) => {
         }}
         lazy={{ loadPrevNext: true }}
       >
-        {entries.map((slide) => {
+        {entries.map((slide: any) => {
           return (
             <SwiperSlide key={slide.sys.id}>
               <Link href={`/promotions/${slide.fields.slug}`}>

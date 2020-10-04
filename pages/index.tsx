@@ -17,7 +17,7 @@ export async function getStaticProps() {
   }
 }
 
-export default function Home({ entries }) {
+export default function Home({ entries }: any) {
   return (
     <>
       <Head>
