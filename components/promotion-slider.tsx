@@ -1,5 +1,5 @@
 // packages
-import { useEffect, useState } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 // components
 import Link from 'next/link'
@@ -10,13 +10,17 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 // utils
 import { breakpoints, colors } from '../utils/css-config'
 
-const PromotionSlider = ({ entries }) => {
+type Props = {
+  entries: any
+}
+
+const PromotionSlider: React.FC<Props> = ({ entries }) => {
   SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay, Lazy, EffectFade])
 
   return (
     <StyledContainer maxWidth="xl">
       <StyledSwiper
-        slidesperview={1}
+        slidesPerView={1}
         navigation
         pagination={{ clickable: true }}
         spaceBetween={50}
@@ -27,7 +31,7 @@ const PromotionSlider = ({ entries }) => {
         }}
         lazy={{ loadPrevNext: true }}
       >
-        {entries.map((slide) => {
+        {entries.map((slide: any) => {
           return (
             <SwiperSlide key={slide.sys.id}>
               <Link href={`/promotions/${slide.fields.slug}`}>

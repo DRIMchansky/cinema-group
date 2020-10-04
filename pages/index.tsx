@@ -1,3 +1,6 @@
+// packages
+import React from 'react'
+
 // components
 import Head from 'next/head'
 import Layout from '../components/layout'
@@ -14,7 +17,7 @@ export async function getStaticProps() {
   }
 }
 
-export default function Home({ entries }) {
+export default function Home({ entries }: any) {
   return (
     <>
       <Head>

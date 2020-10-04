@@ -1,11 +1,17 @@
 // packages
+import React from 'react'
 import styled from 'styled-components'
 // components
 import { FoldIcon, CloseIcon } from './nav-icons'
 // utils
 import { colors } from '../utils/css-config'
 
-const Hamburger = ({ isActive, setActive }) => {
+type Props = {
+  isActive: Boolean
+  setActive: Function
+}
+
+const Hamburger: React.FC<Props> = ({ isActive, setActive }) => {
   return (
     <StyledHamburger onClick={() => setActive(!isActive)}>
       {isActive ? <CloseIcon color={colors.white} /> : <FoldIcon color={colors.white} />}

@@ -1,7 +1,8 @@
 // packages
+import React from 'react'
 import styled from 'styled-components'
 
-const Logo = () => {
+const Logo: React.FC = () => {
   return <StyledLogo href="/" />
 }
 

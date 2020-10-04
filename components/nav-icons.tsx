@@ -1,15 +1,20 @@
 // packages
+import React from 'react'
 import styled from 'styled-components'
 // utils
-import { colors } from '../utils/css-config'
+// import { colors } from '../utils/css-config'
 
-const Svg = styled.svg`
+const Svg = styled.svg<any>`
   svg {
     display: inline-block;
   }
 `
 
-export const CloseIcon = ({ color }) => (
+type iconProps = {
+  color: any
+}
+
+export const CloseIcon: React.FC<iconProps> = ({ color }) => (
   <Svg
     fill={color}
     xmlns="http://www.w3.org/2000/svg"
@@ -25,7 +30,7 @@ export const CloseIcon = ({ color }) => (
   </Svg>
 )
 
-export const FoldIcon = ({ color }) => (
+export const FoldIcon: React.FC<iconProps> = ({ color }) => (
   <Svg
     fill={color}
     xmlns="http://www.w3.org/2000/svg"
@@ -41,7 +46,7 @@ export const FoldIcon = ({ color }) => (
   </Svg>
 )
 
-export const ArrowIcon = () => (
+export const ArrowIcon: React.FC<iconProps> = () => (
   <Svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" xmlnsXlink="http://www.w3.org/1999/xlink">
     <title>arrow down</title>
     <use fill="#FFF" xlinkHref="#menuArrow" transform="translate(1 1)" />
@@ -53,7 +58,7 @@ export const ArrowIcon = () => (
     </defs>
   </Svg>
 )
-export const SearchIcon = () => (
+export const SearchIcon: React.FC<iconProps> = () => (
   <Svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" xmlnsXlink="http://www.w3.org/1999/xlink">
     <title>arrow down</title>
     <use fill="#FFF" xlinkHref="#menuSearch" transform="translate(1 1)" />

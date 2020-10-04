@@ -1,20 +1,21 @@
 // packages
+import React from 'react'
 import styled from 'styled-components'
 // components
 import NavbarLink from './navbar-link'
 import NavbarSubList from './navbar-sublist'
 // utils
-import { colors, breakpoints } from '../../utils/css-config'
+import { breakpoints } from '../../utils/css-config'
 // data
-import { navigation } from '../../data/navigation'
+import navigation from '../../data/navigation.json'
 
-const NavbarList = () => {
+const NavbarList: React.FC = () => {
   return (
     <StyledNavbarList>
-      {navigation.map((item) => {
+      {navigation.map((item: any) => {
         return (
           <StyledNavbarItem key={item.primaryTitle}>
-            <NavbarLink name={item.primaryTitle} href={item.primaryTitleHref} type="primary" />
+            <NavbarLink name={item.primaryTitle} href={item.primaryTitleHref} />
             <NavbarSubList cities={item.cities} />
           </StyledNavbarItem>
         )
@@ -56,11 +57,6 @@ const StyledNavbarItem = styled.li`
       }
     }
   }
-`
-
-const StyledItemInner = styled.div`
-  display: flex;
-  flex-direction: column;
 `
 
 export default NavbarList

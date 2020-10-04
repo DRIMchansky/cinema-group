@@ -1,11 +1,18 @@
 // packages
+import React from 'react'
 import styled from 'styled-components'
 // components
 import Link from 'next/link'
 // utils
 import { colors, breakpoints } from '../../utils/css-config'
 
-const NavbarSubLink = ({ branch, name, href }) => {
+type Props = {
+  branch: string
+  name: string
+  href: string
+}
+
+const NavbarSubLink: React.FC<Props> = ({ branch, name, href }) => {
   return (
     <Link href={href} passHref>
       <StyledNavbarSubLink>

@@ -1,11 +1,14 @@
 // packages
+import React from 'react'
 import styled from 'styled-components'
 // components
 import NavbarList from './navbar-list'
 // utils
 import { breakpoints } from '../../utils/css-config'
 
-const Navbar = ({ type }) => {
+type Props = { type: any }
+
+const Navbar: React.FC<Props> = ({ type }) => {
   return (
     <StyledNavbar type={type}>
       <NavbarList />
@@ -13,7 +16,7 @@ const Navbar = ({ type }) => {
   )
 }
 
-const StyledNavbar = styled.nav`
+const StyledNavbar = styled.nav<Props>`
   width: 100%;
   display: ${(props) => (props.type === 'mobile' ? 'block' : 'none')};
   visibility: ${(props) => (props.type === 'mobile' ? 'visible' : 'hidden')};

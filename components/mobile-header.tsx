@@ -1,19 +1,24 @@
 // packages
+import React from 'react'
 import styled from 'styled-components'
 // components
 import Navbar from './navbar/navbar'
 // utils
 import { colors, constants, breakpoints } from '../utils/css-config'
 
-const MobileHeader = ({ isActive }) => {
+type Props = {
+  isActive: Boolean
+}
+
+const MobileHeader: React.FC<Props> = ({ isActive }) => {
   return (
-    <StyledMobileHeader isActive={isActive}>
+    <StyledMobileHeader<any> isActive={isActive}>
       <Navbar type="mobile" />
     </StyledMobileHeader>
   )
 }
 
-const StyledMobileHeader = styled.nav`
+const StyledMobileHeader = styled.nav<Props>`
   display: flex;
   position: fixed;
   background: ${colors.white};

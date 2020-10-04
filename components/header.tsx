@@ -1,4 +1,5 @@
 // packages
+import React from 'react'
 import styled from 'styled-components'
 // components
 import Logo from './logo'
@@ -9,7 +10,12 @@ import Hamburger from './hamburger'
 // utils
 import { colors, breakpoints } from '../utils/css-config'
 
-const Header = ({ isActive, setActive }) => {
+type Props = {
+  isActive: Boolean
+  setActive: Function
+}
+
+const Header: React.FC<Props> = ({ isActive, setActive }) => {
   return (
     <StyledHeader>
       <StyledContainer maxWidth="xl">
