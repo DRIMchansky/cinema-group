@@ -1,3 +1,6 @@
+// packages
+import React from 'react'
+
 // components
 import Head from 'next/head'
 import Layout from '../components/layout'

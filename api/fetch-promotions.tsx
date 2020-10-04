@@ -6,7 +6,7 @@ const fetchPromotions = async () => {
   // })
   const entries = await contentfulClient.getEntries('promotion')
   if (entries.items) return entries.items
-  console.log(`Error getting Entries for ${contentType.name}.`)
+  console.log(`Error getting Entries`)
 }
 
 export default fetchPromotions

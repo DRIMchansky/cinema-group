@@ -1,18 +1,23 @@
 // packages
+import React from 'react'
 import styled from 'styled-components'
 // components
 import NavbarSubLink from './navbar-sublink'
 // utils
 import { colors, breakpoints, shadows } from '../../utils/css-config'
 
-const NavbarSubList = ({ cities }) => {
+type Props = {
+  cities: Array<any>
+}
+
+const NavbarSubList: React.FC<Props> = ({ cities }) => {
   return (
     <StyledNavbarSubList>
-      {cities.map((city) => {
+      {cities.map((city: any) => {
         return (
           <li key={city.city}>
             <StyledCity>{city.city}</StyledCity>
-            {city.links.map((link) => {
+            {city.links.map((link: any) => {
               return <NavbarSubLink branch={link.branch} name={link.name} href={link.href} key={link.name} />
             })}
           </li>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const CityPicker = () => {
+const CityPicker: React.FC = () => {
   return <div>City picker</div>
 }
 

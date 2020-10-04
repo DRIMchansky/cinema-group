@@ -1,12 +1,22 @@
 // packages
+import React from 'react'
 import styled from 'styled-components'
 import { useState } from 'react'
 // components
 import MobileHeader from './mobile-header'
 
-import Header from './Header'
+import Header from './header'
 
-const Layout = ({ children }) => {
+type Props = {
+  children: JSX.Element
+}
+
+type StateTypes = {
+  isActive: Boolean
+  setActive: Function
+}
+
+const Layout: React.FC<Props> = ({ children }) => {
   // mobile menu state state
   const [isActive, setActive] = useState(false)
 
@@ -16,7 +26,7 @@ const Layout = ({ children }) => {
         <StyledContent>
           <MobileHeader isActive={isActive} />
           <Header isActive={isActive} setActive={setActive} />
-          <OverflowStyled isActive={isActive} onClick={() => setActive(!isActive)} />
+          <OverflowStyled<any> isActive={isActive} onClick={() => setActive(!isActive)} />
           {children}
         </StyledContent>
         <StyledFooter>Footer</StyledFooter>
@@ -39,7 +49,7 @@ const StyledFooter = styled.footer`
   flex-shrink: 0;
 `
 
-const OverflowStyled = styled.div`
+const OverflowStyled = styled.div<StateTypes>`
   position: absolute;
   left: 0;
   top: 0;
