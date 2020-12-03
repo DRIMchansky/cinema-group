@@ -1,34 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Logo renders correctly 1`] = `
-.c0 {
-  display: block;
-  height: 2.4rem;
-  width: 7rem;
-  background-image: url('/logo.svg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  -webkit-transform: translateY(-5%);
-  -ms-transform: translateY(-5%);
-  transform: translateY(-5%);
-}
-
-.c0:focus {
-  outline: none;
-}
-
-@media (min-width:960px) {
-  .c0 {
-    height: 3.6rem;
-    width: 11rem;
-    -webkit-transform: translateY(3%);
-    -ms-transform: translateY(3%);
-    transform: translateY(3%);
-  }
-}
-
 <a
-  className="c0"
+  className="logo__StyledLogo-sc-24h4yw-0 eYJlAW"
   href="/"
 />
 `;
