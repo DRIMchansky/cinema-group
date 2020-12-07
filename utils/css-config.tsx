@@ -2,7 +2,7 @@ const constants = {
   MOBILE_MENU_WIDTH: 260,
 }
 
-let colors: object = {
+let colors = {
   primary: '#eebbc3',
   lighter: '#324082',
   black: '#333',
