@@ -3,4 +3,18 @@ const contentfulClient = require('contentful').createClient({
   accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN,
 })
 
-export default contentfulClient
+const getPromotions = async () => {
+
+  try {
+    const entries = await contentfulClient.getEntries('promotion')
+    return entries.items
+
+  } catch (e) {
+    console.log(`Error getting Entries`)
+    console.error(e)
+  }
+
+
+}
+
+export { contentfulClient, getPromotions }

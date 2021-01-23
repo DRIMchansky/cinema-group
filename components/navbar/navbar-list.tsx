@@ -5,14 +5,16 @@ import styled from 'styled-components'
 import NavbarLink from './navbar-link'
 import NavbarSubList from './navbar-sublist'
 // utils
+import { TMixedObject } from '../../utils/types'
 import { breakpoints } from '../../utils/css-config'
 // data
 import navigation from '../../data/navigation.json'
 
+
 const NavbarList: React.FC = () => {
   return (
     <StyledNavbarList>
-      {navigation.map((item: any) => {
+      {navigation.map((item: TMixedObject) => {
         return (
           <StyledNavbarItem key={item.primaryTitle}>
             <NavbarLink name={item.primaryTitle} href={item.primaryTitleHref} />

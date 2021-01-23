@@ -5,10 +5,16 @@ import React from 'react'
 import Head from 'next/head'
 import Layout from '../components/layout'
 import PromotionSlider from '../components/promotion-slider'
-import fetchPromotions from '../api/fetch-promotions'
+import { getPromotions } from '../api/contentful'
 
 export async function getStaticProps() {
-  const entries = await fetchPromotions()
+  const entries:any = await getPromotions()
+
+  if (!entries) {
+    return {
+      props: {}
+    }
+  }
 
   return {
     props: {
@@ -21,7 +27,7 @@ export default function Home({ entries }: any) {
   return (
     <>
       <Head>
-        <title>Рублион Синема</title>
+        <title>Cinema Group</title>
       </Head>
       <Layout>
         <PromotionSlider entries={entries} />

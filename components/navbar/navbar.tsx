@@ -6,7 +6,7 @@ import NavbarList from './navbar-list'
 // utils
 import { breakpoints } from '../../utils/css-config'
 
-type Props = { type: any }
+type Props = { type: string }
 
 const Navbar: React.FC<Props> = ({ type }) => {
   return (

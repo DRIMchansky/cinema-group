@@ -9,9 +9,10 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 
 // utils
 import { breakpoints, colors } from '../utils/css-config'
+import { TMixedObject } from '../utils/types'
 
 type Props = {
-  entries: any
+  entries: TMixedObject
 }
 
 const PromotionSlider: React.FC<Props> = ({ entries }) => {

@@ -2,21 +2,23 @@ import { createGlobalStyle } from 'styled-components'
 import { fonts, breakpoints } from './css-config'
 
 const GlobalStyles = createGlobalStyle`
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
+
 html {
   height: 100%;
-  line-height: 1.15; 
-  -webkit-text-size-adjust: 100%; 
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
   font-size: 16px;
 
   @media(${breakpoints.medium}) {
     font-size: 18px;
   }
-  
+
   @media(${breakpoints.extra}) {
     font-size: 20px;
   }
@@ -57,7 +59,7 @@ pre {
     'Liberation Mono',
     Menlo,
     monospace;
-  font-size: 1em; 
+  font-size: 1em;
 }
 
 /**

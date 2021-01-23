@@ -5,9 +5,10 @@ import styled from 'styled-components'
 import NavbarSubLink from './navbar-sublink'
 // utils
 import { colors, breakpoints, shadows } from '../../utils/css-config'
+import { TMixedArray } from '../../utils/types'
 
 type Props = {
-  cities: Array<any>
+  cities: TMixedArray
 }
 
 const NavbarSubList: React.FC<Props> = ({ cities }) => {
